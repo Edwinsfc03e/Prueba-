@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Mensaje de amor para mi novia</title>
     <link rel="stylesheet" type="text/css" href="estilos/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h1>¡Te amo, mi amor!</h1>
-      <!-- <img src="https://lh3.google.com/pw/AMWts8Cvh4PioFqVmF-5bF5-K9fU4DIoaOhuN3gW_iazvzrk1m3KrhzNLEL3HTPjQwECe7FVQ6Egw3sitLuKW9guIRUw7wJCNw=w318-h657-no?authuser=2" alt="Imagen romántica"> -->
-      <video width="640" height="360" controls >
-        <source src="videos/Snapchat-1834754009.mp4" type="video/mp4">
-      </video>
-      <h2>Gracias por ser mi compañera de vida</h2>
-      <p>Eres la luz que ilumina mi camino, la razón por la que me despierto cada mañana con una sonrisa en el rostro. Cada día me siento más enamorado de ti y agradecido por tenerte a mi lado. Eres mi complemento perfecto, mi alma gemela, mi todo. Te amo con todo mi corazón y siempre te amaré.</p>
-      <p>¡Te amo mi amor!</p>
+        <h1>¡Te amo, mi amor!</h1>
+        <!-- <img src="https://lh3.google.com/pw/AMWts8Cvh4PioFqVmF-5bF5-K9fU4DIoaOhuN3gW_iazvzrk1m3KrhzNLEL3HTPjQwECe7FVQ6Egw3sitLuKW9guIRUw7wJCNw=w318-h657-no?authuser=2" alt="Imagen romántica"> -->
+        <video width="640" height="360" controls>
+            <source src="videos/Snapchat-1834754009.mp4" type="video/mp4">
+        </video>
+        <h2>Gracias por ser mi compañera de vida</h2>
+        <p>Eres la luz que ilumina mi camino, la razón por la que me despierto cada mañana con una sonrisa en el rostro.
+            Cada día me siento más enamorado de ti y agradecido por tenerte a mi lado. Eres mi complemento perfecto, mi
+            alma gemela, mi todo. Te amo con todo mi corazón y siempre te amaré.</p>
+        <p>¡Te amo mi amor!</p>
+        <br>
+        <p>
+        <form>
+            <label for="clave">Introduzca la clave de acceso:</label>
+            <br>
+            <input type="password" id="clave" name="clave">
+            <br><br>
+            <button type="button" onclick="acceder()"
+                style="background-color: #ff69b4; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; text-transform: uppercase; cursor: pointer;">dale
+                >Acceder</button>
+        </form>
+        <div id="contenido" style="display:none;">
+            <p>Dia en el que nos hicimos novios :3(en numeros si es un numero asi "1,2,3,4,5,6,7,8,9" agregale un cero(0))</p>
+        </div>
+        <script>
+            function acceder() {
+                var clave = document.getElementById("clave").value;
+                if (clave === "05") {
+                    document.getElementById("contenido").style.display = "block";
+                    window.location.href = "htmls/corazon.html";
+                } else {
+                    alert("Clave incorrecta. Inténtelo de nuevo.");
+                }
+            }
+        </script>
+        </p>
+
     </div>
 
-    <a href="htmls/corazon.html">dale click</a>
-  </body>
+</body>
+
 </html>
